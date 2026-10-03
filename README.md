@@ -16,6 +16,14 @@ This download contains the **Base Stream Deck plugin** and the **Stream Deck PZ 
 
 Each key has its own settings. Numeric metrics support configurable flashing alarms; Calendar has no alarm. Nearby-zombie monitoring and hotkeys are excluded.
 
+## Coming soon: Complete edition
+
+A paid **StreamDeckPZ Complete** edition is planned for release on the **Elgato Marketplace**.
+
+Alongside Health, Hunger, Thirst and Fatigue, Complete adds **Clock / Air Temperature, Endurance, Mood, Carry Weight, Body Temperature, Wetness, Calendar, Vehicle and Equipped Weapon**: 13 action types in total, with per-key settings and numeric alarms.
+
+Release date, pricing and the Marketplace link will be announced here. Complete is not yet available on the Marketplace.
+
 ## Requirements
 
 - Project Zomboid **Build 42**, single-player.
