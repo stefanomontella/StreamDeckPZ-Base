@@ -1,0 +1,4 @@
+name=Stream Deck PZ Bridge
+id=StreamDeckPZ
+poster=poster.png
+description=Exports local player status to a JSON file for Stream Deck.
