@@ -1,28 +1,34 @@
-# StreamDeckPZ Base
+# Survival Status - StreamDeckPZ Complete
 
-[Download the Base package](https://raw.githubusercontent.com/stefanomontella/StreamDeckPZ-Base/main/StreamDeckPZ-Base.zip). Extract it before installing.
+**All 13 action types are available as a free download.**
 
+[Download Complete](https://github.com/stefanomontella/StreamDeckPZ-Base/releases/latest) | [Steam Workshop bridge](https://steamcommunity.com/sharedfiles/filedetails/?id=3812767649)
 
-Version **0.7.0.0** — Free edition
+The repository keeps its original StreamDeckPZ-Base name. The latest release contains Complete; the four-action Base package is also retained.
 
-This download contains the **Base Stream Deck plugin** and the **Stream Deck PZ Bridge** game mod. The same game mod is used by both editions: enable it only once.
+Version **0.8.0.0** — Free download - all 13 action types
+
+This download contains the **Complete Stream Deck plugin** and the **Stream Deck PZ Bridge** game mod.
+
+[Download the latest Complete package](https://github.com/stefanomontella/StreamDeckPZ-Base/releases/latest) | [Game mod on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3812767649)
 
 ## Included actions
 
+- Body Temperature
+- Wetness
+- Calendar
+- Vehicle
+- Equipped Weapon
+- Endurance
+- Fatigue
+- Mood
+- Carry Weight
 - Health
+- Clock / Temperature
 - Hunger
 - Thirst
-- Fatigue
 
 Each key has its own settings. Numeric metrics support configurable flashing alarms; Calendar has no alarm. Nearby-zombie monitoring and hotkeys are excluded.
-
-## Coming soon: Complete edition
-
-A paid **StreamDeckPZ Complete** edition is planned for release on the **Elgato Marketplace**.
-
-Alongside Health, Hunger, Thirst and Fatigue, Complete adds **Clock / Air Temperature, Endurance, Mood, Carry Weight, Body Temperature, Wetness, Calendar, Vehicle and Equipped Weapon**: 13 action types in total, with per-key settings and numeric alarms.
-
-Release date, pricing and the Marketplace link will be announced here. Complete is not yet available on the Marketplace.
 
 ## Requirements
 
@@ -35,7 +41,9 @@ No Node.js, npm or compilation is required for this download.
 
 ## Install the game mod
 
-Close Project Zomboid first. Extract the complete ZIP before installing; do not run the installer from inside an archive.
+Subscribe to the linked Steam Workshop mod and enable **Stream Deck PZ Bridge** in your single-player save. Create `Zomboid/Lua/StreamDeckPZ` in your user folder before playing.
+
+For manual installation, close Project Zomboid and extract the ZIP; do not run the installer from inside an archive. Choose either Workshop or manual installation to avoid duplicate copies of the same bridge.
 
 On Windows, open PowerShell **inside this extracted folder**, where this README, the installer and `mods` are located, and run:
 
@@ -59,12 +67,12 @@ An already installed bridge exporting Health and Fatigue can be reused. You do n
 
 ## Install the Stream Deck plugin
 
-1. Double-click **`com.streamdeckpz.base.streamDeckPlugin`** and accept installation in Stream Deck.
+1. Double-click **`com.streamdeckpz.status.streamDeckPlugin`** and accept installation in Stream Deck.
 2. Fully quit and reopen Stream Deck after an update.
-3. Open **Project Zomboid Status Base** and drag the desired actions onto keys.
+3. Open **Project Zomboid Status Complete** and drag the desired actions onto keys.
 4. Select a key to change colours, percentage visibility, thresholds and alarms. Changes apply immediately; game restart is not required for key settings.
 
-The plugin defaults to the `state.json` path above. For a custom game user directory, edit `config.json` in the installed plugin folder, set `statePath` to an absolute JSON file path, and restart Stream Deck. On Windows the plugin folder is `%APPDATA%\Elgato\StreamDeck\Plugins\com.streamdeckpz.base.sdPlugin`; on macOS it is `~/Library/Application Support/com.elgato.StreamDeck/Plugins/com.streamdeckpz.base.sdPlugin`.
+The plugin defaults to the `state.json` path above. For a custom game user directory, edit `config.json` in the installed plugin folder, set `statePath` to an absolute JSON file path, and restart Stream Deck. On Windows the plugin folder is `%APPDATA%\Elgato\StreamDeck\Plugins\com.streamdeckpz.status.sdPlugin`; on macOS it is `~/Library/Application Support/com.elgato.StreamDeck/Plugins/com.streamdeckpz.status.sdPlugin`.
 
 Base and Complete have separate plugin/action identifiers and can coexist. Moving from Base to Complete requires assigning the Complete actions and copying any preferred per-key settings. Updating an existing Complete plugin preserves its action identifiers.
 
@@ -77,6 +85,4 @@ Base and Complete have separate plugin/action identifiers and can coexist. Movin
 - Vehicle, weapon, body temperature, wetness and moon-phase readings still require verification in the user's exact Build 42. In-game APIs can differ by build; unknown optional readings remain unavailable.
 - Build 41 and multiplayer are not supported. This distribution is a download bundle, not a Steam Workshop upload container.
 
-Base is the free edition and includes four action types with their settings and alarms.
-
-`SHA256SUMS.txt` contains integrity hashes for the distributed files. The mod includes its in-game poster. Plugin source files, build tools, dependencies, local settings and runtime logs are not included in this download.
+The mod includes its in-game poster. Plugin source files, build tools, dependencies, local settings and runtime logs are not included in this download.

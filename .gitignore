@@ -4,5 +4,3 @@ node_modules/
 *.log
 logs/
 state.json
-*Complete*
-com.streamdeckpz.status*
